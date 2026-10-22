@@ -1,0 +1,1 @@
+document.addEventListener('submit',function(e){const f=e.target;if(f.dataset.confirm&&!confirm(f.dataset.confirm)){e.preventDefault();return;}const b=f.querySelector('button[type=submit],button:not([type])');if(b){b.disabled=true;b.textContent='Please wait…';}});

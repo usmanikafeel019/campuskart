@@ -1,0 +1,2 @@
+@extends('layouts.app')
+@section('content')<h1 class="mb-4">Marketplace overview</h1>@include('admin.nav')<div class="row g-3">@foreach($stats as $label=>$value)<div class="col-sm-6 col-lg-4"><div class="panel"><div class="text-secondary">{{ $label }}</div><div class="stat">{{ $value }}</div></div></div>@endforeach</div>@endsection

@@ -1,0 +1,1 @@
+<div class="d-flex flex-wrap gap-2 mb-4">@foreach([''=>'Overview','users'=>'Students','materials'=>'Listings','options/categories'=>'Categories','options/subjects'=>'Subjects','reports'=>'Reports'] as $path=>$label)<a class="btn btn-outline-primary bg-white" href="/admin/{{ $path }}">{{ $label }}</a>@endforeach</div>
